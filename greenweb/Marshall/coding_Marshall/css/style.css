@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+video {
+  object-fit: cover;
+  vertical-align: top;
+  height: 910px;
+}
+/* #wrap{
+  width: 1920px;
+  min-width: 1280px;
+} */
+.section {
+  position: relative;
+}
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  position: relative;
+}
+.header_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  background: url("/Marshall/coding_Marshall/src/images/logo.png") no-repeat
+    center center;
+  background-size: contain;
+  width: 180px;
+  height: 50px;
+  margin: 30px 0 0 20px;
+}
+.logo a {
+  background-color: cornflowerblue;
+  width: 180px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.gnb {
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.gnb li {
+  margin: 0px 50px;
+  font-size: 18px;
+  font-weight: 700px;
+}
+
+.util {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 60px;
+}
+.util li {
+  margin: 0px 20px;
+}
+.util li a {
+  width: 25px;
+  height: 25px;
+}
+.search {
+  background: url("/Marshall/coding_Marshall/src/images/search.png") no-repeat
+    center center;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+}
+.help {
+  background: url("/Marshall/coding_Marshall/src/images/help.png") no-repeat
+    center center;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+}
+.cart {
+  background: url("/Marshall/coding_Marshall/src/images/cart.png") no-repeat
+    center center;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+}
+.section02 {
+  position: relative;
+}
+.s2_img img {
+  object-fit: cover;
+}
+.s2_textbox {
+  position: absolute;
+  color: white;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 970px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.s2_text {
+  font-size: 80px;
+  margin-bottom: 80px;
+}
+.s2_subtext {
+  font-size: 50px;
+}
+.s2_scrolltext {
+  position: absolute;
+  font-size: 30px;
+  bottom: 60px;
+}
+
+/* 반응형 이미지 중앙정렬 */
+/* @media all and (max-width:480px) {
+
+    img {display:block;margin:0 auto;}
+} */

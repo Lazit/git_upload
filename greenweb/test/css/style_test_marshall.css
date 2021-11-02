@@ -1,0 +1,407 @@
+/* default setting */
+@font-face {
+  src: url("../src/fonts/helvetica-rmagid/Helvetica.ttf");
+  font-family: "helv";
+}
+@font-face {
+  src: url("../src/fonts/helvetica-rmagid/Helvetica\ Light.ttf");
+  font-family: "helvl";
+}
+@font-face {
+  src: url("../src/fonts/helvetica-rmagid/Helvetica\ Inserat.ttf");
+  font-family: "helvrat";
+}
+/*--------------------------------------------------------------------*/
+@media screen and (max-width: 1900px) {
+  #wrap {
+    display: none;
+  }
+  #mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  #mask {
+    display: none;
+  }
+}
+
+/*--------------------------default-----------------------------------*/
+
+.section {
+  text-align: center;
+  color: white;
+  /*problem overflow-x: hidden; */
+}
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+img {
+  pointer-events: none;
+}
+
+/* id-section */
+
+#header {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: all 0.3s;
+}
+#header:hover {
+  background-color: black;
+  transition: all 0.2s;
+}
+
+/* 
+
+
+ --------------------------------------header ------------------------------------
+
+
+*/
+.menu {
+  cursor: pointer;
+}
+.region_control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.region_menu {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+.region_menu h2 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.region_menu p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.region_input {
+  display: flex;
+}
+.region_input select {
+  text-align: center;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  margin-right: 30px;
+}
+.confirm_button {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: white;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  transform: translate(-50%, -0);
+  transition: all 0.5s;
+  margin-left: 60px;
+}
+.confirm_button:hover {
+  background-color: #333;
+  color: white;
+  transition: all 0.2s;
+}
+.region_control {
+  display: none;
+}
+
+#menu:checked + .region_control {
+  margin-top: 70px;
+  display: block;
+}
+
+.header_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo a {
+  display: block;
+  background: url("../src/images/logo.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180px;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.gnb {
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.gnb li {
+  font-size: 18px;
+  font-weight: 700px;
+  margin-left: 70px;
+  font-family: "Heebo", sans-serif;
+}
+
+.util {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 20px;
+  font-family: "Heebo", sans-serif;
+}
+
+.i_search a,
+.i_help a,
+.i_cart a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 40px;
+}
+
+.i_search a {
+  background-image: url("../src/images/search.png");
+}
+.i_help a {
+  background-image: url("../src/images/help.png");
+}
+.i_cart a {
+  background-image: url("../src/images/cart.png");
+}
+
+/* 
+
+
+ --------------------------------------s1 ------------------------------------
+
+
+*/
+
+.center_box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+video {
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0);
+}
+
+/* 
+
+
+ --------------------------------------s2 ------------------------------------
+
+
+*/
+
+.s2 {
+  background-image: url("../src/images/mainvisual.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s2_text p:first-child {
+  font-size: 100px;
+  padding-bottom: 80px;
+  text-shadow: 1px 1px 10px rgb(22, 22, 22);
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+}
+.s2_text p:nth-child(2) {
+  font-size: 50px;
+  text-shadow: 1px 1px 10px rgb(22, 22, 22);
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+}
+.go_button {
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 290px;
+  left: 50%;
+  width: 260px;
+  height: 60px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -0);
+  transition: all 0.5s;
+}
+.go_button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.2s;
+}
+
+/* 
+
+
+ --------------------------------------s3 ------------------------------------
+
+
+*/
+.s3 {
+  position: relative;
+}
+.img_box img {
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0);
+}
+.page_title {
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translate(-50%, -0);
+  color: white;
+  font-size: 80px;
+  text-shadow: 2px 2px 10px rgb(22, 22, 22);
+  font-family: "Heebo", sans-serif;
+}
+.page_text {
+  position: absolute;
+  bottom: 230px;
+  left: 50%;
+  transform: translate(-50%, -0);
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 10px rgb(22, 22, 22);
+  font-family: "Heebo", sans-serif;
+  font-weight: 100;
+}
+.s3 .go_button {
+  bottom: 100px;
+}
+
+.sl2_title {
+  text-shadow: 1px 1px 10px rgb(22, 22, 22);
+}
+.sl2_text {
+  font-size: 23px;
+  bottom: 220px;
+}
+
+/* 
+
+
+ --------------------------------------s4 ------------------------------------
+
+
+*/
+
+.s4_title {
+  top: 140px;
+  text-shadow: 1px 1px 10px rgb(22, 22, 22);
+}
+.s4_text {
+  top: 200px;
+  font-size: 30px;
+}
+.s4_subtext {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  transform: translate(-50%, -0);
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 10px rgb(22, 22, 22);
+  font-family: "Heebo", sans-serif;
+  font-weight: 100;
+}
+.s4 .go_button {
+  bottom: 130px;
+}
+
+/* 
+
+
+ --------------------------------------s5 ------------------------------------
+
+
+*/
+
+.s5 input {
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  transform: translate(-50%, -0);
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Heebo";
+  font-weight: 400;
+}
+.s5 .go_button {
+  bottom: 400px;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------test-----------------------*/
+
+/* .img_box {
+  position: absolute;
+  top: 0;
+
+  width: 1920px;
+  height: 928px;
+  background-image: url("../src/images/picking.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: top;
+} */
+
+/*fonts---------
+
+font-family: 'Heebo', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+
+*/

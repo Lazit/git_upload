@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marshall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/fullPage.js-master/src/fullpage.css">
+    <script src="/fullPage.js-master/src/fullpage.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_in">
+                <div class="logo_container">
+                    <a href="#">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <ul class="gnb lato">
+                    <li><a href="#">HEADPHONES</a></li>
+                    <li><a href="#">SPEAKERS</a></li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                    <li><a href="#">BACKSTAGE</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a href="#">
+                            <p class="search"></p>
+                        </a></li>
+                    <li><a href="#">
+                            <p class="help"></p>
+                        </a></li>
+                    <li><a href="#">
+                            <p class="cart"></p>
+                        </a></li>
+                    <li><a href="#">SOUTHKOREA/KR</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="container fullpage">
+            <div class="container_in">
+                <div class="section section01">
+                    <div class="s1_in">
+                        <a href="#">
+                            <video src="/Marshall/coding_Marshall/src/video/main_video.mp4" muted autoplay loop width="100%"
+                                height="870px"></video>
+                        </a>
+                    </div>
+                </div>
+                <div class="section section02">
+                    <div class="s2_in">
+                        <div class="s2_img">
+                            <img src="/Marshall/coding_Marshall/src/images/mainvisual.jpg" alt="" width="100%"
+                                height="970px">
+                            <div class="s2_textbox lato">
+                                <p class="s2_text hideme">LISTEN WITH US</p>
+                                <p class="s2_subtext hideme">WE HELP MUSIC EXPRESS YOUR FEELINGS</p>
+                                <p class="s2_scrolltext hideme">FIND YOUR BEST GEAR</p>
+                            </div>
+                        </div>
+                        <!-- 높이값 %로 가능한지. 970같은 특정한 수를 쓰지 않고.. -->
+                    </div>
+                </div>
+                <div class="section section03">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer_in"></div>
+    </footer>
+    </div>
+    <script>
+        $(document).ready(function () {
+                /* 1 */
+                $(window).scroll(function () {
+                    /* 2 */
+                    $('.hideme').each(function (i) {
+                        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                        var bottom_of_window = $(window).scrollTop() + $(window).height();
+                        /* 3 */
+                        if (bottom_of_window > bottom_of_object) {
+                            $(this).animate({ 'opacity': '1' }, 600);
+                        }
+                    });
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+                $('#fullpage').fullpage({
+                    //options here
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                    autoScrolling: true,
+                    scrollHorizontally: true
+                });
+            });
+    </script>
+</body>
+<!-- https://michalsnik.github.io/aos/ -->
+<!-- https://kevink1113.tistory.com/entry/%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%97%90-%EB%94%B0%EB%9D%BC-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%ED%9A%A8%EA%B3%BC-%EC%A0%81%EC%9A%A9%ED%95%B4%EC%A3%BC%EB%8A%94-%EA%B0%84%EB%8B%A8-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-AOS -->
+<!-- https://elvanov.com/2195 -->
+<!-- https://taegon.kim/archives/9807   스크롤 css only -->
+</html>
+
+<!-- https://wormwlrm.github.io/2018/08/05/How-to-make-web-page-to-slide-by-using-fullpage-js.html -->
+
+
+<!-- https://sunshine7e7.tistory.com/35 -->
+<!-- https://m.blog.naver.com/coding-/221432074882 -->
+

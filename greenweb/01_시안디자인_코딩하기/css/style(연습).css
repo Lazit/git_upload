@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+}
+
+#header {}
+#header_in {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1260px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#header_in h1.logo {
+    width: 10%;
+    padding-top: 12px;
+}
+    
+#header_in h1.logo a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+}
+
+#header_in nav.gnb {
+    width: 75%;
+    padding-top: 12px;
+    color: #121212;
+}
+#header_in nav.gnb ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+#header_in nav.gnb ul li {}
+#header_in nav.gnb ul li a {}
+
+#header_in .utill {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+#header_in .utill ul {
+    display: flex;
+}
+#header_in .utill ul li {
+    color: #666;
+    font-size: 8px;
+}
+#header_in .utill ul li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    margin: 0 10px;
+    border-right: 1px solid #bfbfbf;
+    background-color: bfbfbf;
+}
+#header_in .utill ul li a {}
+
+/* hover */
+#header_in nav.gnb ul li:hover {
+    color: #007042;
+}
+
+
+
+
+
+
+
+
+
+
